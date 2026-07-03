@@ -2,4 +2,56 @@ html {
     height: 100%;
     width: 100%;
   }
-  
+  /* márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de navegación */
+.navbar {
+    position: fixed; /* Esto hace que se quede congelada arriba */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Color oscuro de fondo el cual debera ser de paga*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    z-index: 1000; /* queda por encima de todo */
+}
+
+/* Nombre del blog */
+.nav-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* enlaces */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Separación entre botones */
+}
+
+/* Estilo de los enlaces individuales */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto del mouse */
+.nav-links a:hover {
+    color: #ffcc00; /* Cambia a amarillo o el color que prefieras */
+}
+
+/* evita que el menu tape los textos */
+body {
+    padding-top: 80px; 
+}
