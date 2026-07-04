@@ -1,6 +1,6 @@
- 
+
 *{
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,9 +11,9 @@ padding: 20px;
 }
 
 
-    <style>
+<style>
   /* 1. Resetear el modelo de caja para que el padding no altere el tamaño total */
-  * {
+* {
     box-sizing: border-box;
     }
 
@@ -99,5 +99,4 @@ padding: 20px;
     .pictureH img:hover {
     transform: scale(1.02); /* Amplía ligeramente la imagen */
     }
-
 </style>
